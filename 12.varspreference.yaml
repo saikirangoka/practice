@@ -6,13 +6,13 @@
     duration: "1 month"
   vars_files:
   - course.yaml
-  vars_prompt:
-  - name: project
-    prompt: please enter the project
-    private: false
-  - name: duration
-    prompt: please enter the duration
-    private: false
+  # vars_prompt:
+  # - name: project
+  #   prompt: please enter the project
+  #   private: false
+  # - name: duration
+  #   prompt: please enter the duration
+  #   private: false
   tasks:
   - name: vars preferences
     # vars:
@@ -25,4 +25,5 @@
 # commandline
 # tasklevel
 # varsfile
+# varsprompt
 
