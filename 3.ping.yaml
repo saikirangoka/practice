@@ -1,6 +1,5 @@
 - name: print msg
   hosts: web
-  become: yes
   tasks:
   - name: printing msg
     ansible.builtin.debug:
