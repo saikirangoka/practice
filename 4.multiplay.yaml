@@ -1,5 +1,5 @@
 - name: play1
-  hosts: local
+  hosts: multi
   connection: local
   tasks:
   - name: play1 is initiated
