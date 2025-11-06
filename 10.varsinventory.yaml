@@ -1,0 +1,7 @@
+- name: vars inventory
+  hosts: multi
+  connection: local
+  tasks:
+  - name: vars inventory
+    ansible.builtin.debug:
+      msg: "This is {{ project }} project, duration is {{ duration }}"
