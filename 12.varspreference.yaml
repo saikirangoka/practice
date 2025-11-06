@@ -1,0 +1,22 @@
+- name: vars preferences
+  hosts: multi
+  connection: local
+  vars:
+    project: bhp
+    duration: "1 month"
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: project
+    prompt: please enter the project
+    private: false
+  - name: duration
+    prompt: please enter the duration
+    private: false
+  tasks:
+  - name: vars preferences
+    vars:
+      project: "american express"
+      duration: "4 months"
+    ansible.builtin.debug:
+      msg: "This is {{ project }} project, duration is {{ duration }}"
