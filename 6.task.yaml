@@ -1,5 +1,5 @@
 - name: tasklevel
-  hosts: multi
+  hosts: local
   vars:
     employee: saikiran
     employer: "Accenture ind private limited"
