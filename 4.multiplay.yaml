@@ -7,8 +7,7 @@
       msg: "This is play1"
 
 - name: play2
-  hosts: local
-  connection: local
+  hosts: multi
   tasks:
   - name: play2 is initiated
     ansible.builtin.debug:
