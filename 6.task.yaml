@@ -11,3 +11,7 @@
       employer: "Infosys"
     ansible.builtin.debug:
       msg: "Iam {{ employee }}, working in {{ employer }}, and emplyee_id is {{ emp_id }}"
+
+  - name: playlevel
+    ansible.builtin.debug:
+     msg: "Iam {{ employee }}, working in {{ employer }}, and emplyee_id is {{ emp_id }}"
