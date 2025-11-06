@@ -1,0 +1,17 @@
+- name: varsprompt
+  hosts: multi
+  connection: local
+  vars_prompt:
+  - name: course
+    prompt: please enter the course
+    private: false
+  - name: duration
+    prompt: Please enter the duration
+    private: false
+  - name: project
+    prompt: please enter the project
+    private: false
+  tasks:
+  - name: varsprompt
+    ansible.builtin.debug:
+      msg: "This is {{ course }}, duration is {{ duration }}, and project is {{ project }}"
