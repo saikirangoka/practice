@@ -1,0 +1,15 @@
+- name: play1
+  hosts: local
+  connection: local
+  tasks:
+  - name: play1 is initiated
+    ansible.builtin.debug:
+      msg: "This is play1"
+
+- name: play2
+  hosts: local
+  connection: local
+  tasks:
+  - name: play2 is initiated
+    ansible.builtin.debug:
+      msg: "This is play2"
