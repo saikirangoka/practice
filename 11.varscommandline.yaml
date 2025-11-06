@@ -1,0 +1,6 @@
+- name: vars commandline
+  hosts: web
+  tasks:
+  - name: vars commandline
+    ansible,builtin.debug:
+      msg: "This is {{ project }} project, duration is {{ duration }}"
