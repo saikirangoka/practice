@@ -15,8 +15,8 @@
     private: false
   tasks:
   - name: vars preferences
-    vars:
-      project: "american express"
-      duration: "4 months"
+    # vars:
+    #   project: "american express"
+    #   duration: "4 months"
     ansible.builtin.debug:
       msg: "This is {{ project }} project, duration is {{ duration }}"
