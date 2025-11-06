@@ -1,6 +1,6 @@
 - name: varsfile
   hosts: web
-  vars_file:
+  vars_files:
   - course.yaml
   tasks:
   - name: varsfile
