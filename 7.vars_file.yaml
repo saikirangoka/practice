@@ -1,0 +1,8 @@
+- name: varsfile
+  hosts: web
+  vars_file:
+  - course.yaml
+  tasks:
+  - name: varsfile
+    ansible.builtin.debug:
+      msg: "Iam working in {{ project }} project"
