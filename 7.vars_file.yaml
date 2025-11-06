@@ -1,5 +1,6 @@
 - name: varsfile
-  hosts: web
+  hosts: local
+  connection: local
   vars_files:
   - course.yaml
   tasks:
