@@ -2,8 +2,8 @@
   hosts: multi
   connection: local
   vars:
-    project: bhp
-    duration: "1 month"
+    # project: bhp
+    # duration: "1 month"
   vars_files:
   - course.yaml
   # vars_prompt:
@@ -26,4 +26,5 @@
 # tasklevel
 # varsfile
 # varsprompt
+# playlevel
 
