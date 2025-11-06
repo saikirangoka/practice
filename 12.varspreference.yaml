@@ -20,3 +20,9 @@
     #   duration: "4 months"
     ansible.builtin.debug:
       msg: "This is {{ project }} project, duration is {{ duration }}"
+
+
+# commandline
+# tasklevel
+# varsfile
+
