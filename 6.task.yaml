@@ -1,5 +1,6 @@
 - name: tasklevel
   hosts: local
+  connection: local
   vars:
     employee: saikiran
     employer: "Accenture ind private limited"
