@@ -1,0 +1,13 @@
+- name: loops
+  hosts: multi
+  connection: local
+  become: yes
+  tasks:
+  - name: loops
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: installed
+    loop:
+    - git
+    - gcc
+    - nginx
