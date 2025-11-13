@@ -1,5 +1,7 @@
 - name: conditions
-  hosts: web
+  hosts: multi
+  connection: local
+  become: yes
   tasks:
   - name: redhat
     ansible.builtin.dnf:
