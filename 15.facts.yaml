@@ -1,5 +1,5 @@
 - name: facts
-  hosts: multi
+  hosts: local
   become: yes
   tasks:
   - name: ansible facts
