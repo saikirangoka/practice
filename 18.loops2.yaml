@@ -1,0 +1,12 @@
+- name: loops
+  hosts: multi
+  connection: local
+  become: yes
+  tasks:
+  - name: loops2
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: "{{ item }}"
+    loop:
+    - { name: 'nginx', state: 'present'}
+    - { name: 'gcc', state: 'present'}
