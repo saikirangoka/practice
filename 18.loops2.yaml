@@ -5,8 +5,10 @@
   tasks:
   - name: loops2
     ansible.builtin.package:
-      name: "{{ item }}"
-      state: "{{ item }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
     - { name: 'nginx', state: 'present'}
     - { name: 'gcc', state: 'present'}
+    - { name: 'git', state: 'present'}
+    - { name: 'mysql', state: 'absent'}
