@@ -1,6 +1,5 @@
 - name: conditions
-  hosts: multi
-  connection: local
+  hosts: web
   become: yes
   tasks:
   - name: redhat
