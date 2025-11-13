@@ -1,0 +1,14 @@
+- name: conditions
+  hosts: web
+  tasks:
+  - name: redhat
+    ansible.builtin.dnf:
+      name: nginx
+      state: installed
+    when: ansible_os_family == "RedHat"
+
+  - name: Debian
+    ansible.builtin.apt:
+      name: mysql-server
+      state: installed
+    when: ansible_os_family == "Debian"
