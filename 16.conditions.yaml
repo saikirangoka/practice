@@ -1,5 +1,5 @@
 - name: conditions
-  hosts: web
+  hosts: Webs
   become: yes
   tasks:
   - name: redhat
