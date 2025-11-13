@@ -2,7 +2,7 @@
   hosts: multi
   connection: local
   vars:
-    mynumber: 15
+    mynumber: 1
   tasks:
   - name: condition_1
     ansible.builtin.debug:
