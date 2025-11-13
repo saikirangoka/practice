@@ -16,4 +16,4 @@
   tasks:
   - name: datatypes
     ansible.builtin.debug:
-      msg: "My position is {{ position }}, my employee id is {{ emp_id }}, having 4 years exp {{ working }}, worked in projects {{ projects }} and my hikes in the year is {{ hikes }}"
+      msg: "My position is {{ position }}, my employee id is {{ emp_id }}, having 4 years exp {{ working }}, worked in projects {{ projects }} and my hikes in the year is {{ hike }}"
